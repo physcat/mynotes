@@ -1,0 +1,7 @@
+{
+    "cpus": 4,
+    "dashboard": true,
+    "heapster": true,
+    "memory": 12000,
+    "vm-driver": "kvm2"
+}
