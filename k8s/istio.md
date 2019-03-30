@@ -10,6 +10,10 @@ helm install istio.io/istio-cni --name=istio-cni --namespace=istio-system
 helm install istio.io/istio --name istio --namespace istio-system \
      --set istio_cni.enabled=true
 ```
+On GKE clusters you need to enable "Network policy" and change the istio bin path used for cni
+```bash
+helm install istio.io/istio-cni --name=istio-cni --namespace=istio-system --set cniBinDir=/home/kubernetes/bin
+```
 
 ### Install without cni plugin
 ```bash
