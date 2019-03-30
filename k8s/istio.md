@@ -6,6 +6,7 @@
 helm repo add istio.io https://storage.googleapis.com/istio-release/releases/1.1.1/charts/
 helm update
 kubectl create namespace istio-system
+helm install istio.io/istio-init --name istio-init --namespace istio-system --set istio_cni.enabled=true
 helm install istio.io/istio-cni --name=istio-cni --namespace=istio-system
 helm install istio.io/istio --name istio --namespace istio-system \
      --set istio_cni.enabled=true
