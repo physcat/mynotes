@@ -9,7 +9,7 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 Reference: [github](https://github.com/kubernetes/minikube)
 
 ## Install minikube KVM2 driver 
-Follow the official installation instructions on [https://github.com/kubernetes/minikube/blob/master/docs/drivers.md#kvm2-driver](github)
+Follow the official installation instructions on [github](https://github.com/kubernetes/minikube/blob/master/docs/drivers.md#kvm2-driver)
 
 
 ## Configure
