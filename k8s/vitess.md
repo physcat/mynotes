@@ -59,6 +59,19 @@ kubectl create secret generic rpi-db-password --from-literal=password=rpi123
 helm install helm/vitess --namespace vitess --name vitess -f ../values.yaml
 ```
 
+## Testing
+
+
+Terminal 1
+```bash
+kubectl port-forward service/vtgate-zone1 3306:3306
+```
+
+Terminal 2
+```bash
+mysql -h 127.0.0.1 -u rpi -prpi123
+```
+
 ## References
 
 - [etcd-operator](https://github.com/coreos/etcd-operator/blob/master/doc/user/install_guide.md)
