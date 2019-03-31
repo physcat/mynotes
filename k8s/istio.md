@@ -1,4 +1,14 @@
-# Install Istio
+# Istio
+
+## On minikube
+
+```bash
+curl -L https://git.io/getLatestIstio | sh -
+cd istio-1.1.1
+kubectl apply -f install/kubernetes/helm/istio/templates/crds.yaml
+kubectl apply -f install/kubernetes/istio-demo.yaml
+```
+
 
 ## Using helm
 ### Install with cni plugin
@@ -36,3 +46,4 @@ helm install istio.io/istio --name istio --namespace istio-system
 - [istio install with cni](https://istio.io/docs/setup/kubernetes/additional-setup/cni/)
 - [istio download](https://istio.io/docs/setup/kubernetes/download/)
 - [istio helm install](https://istio.io/docs/setup/kubernetes/install/helm/)
+

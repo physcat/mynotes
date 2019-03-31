@@ -2,7 +2,7 @@
 
 When creating a k8s cluster here are some tasks to consider (in order)
 
-- Create a docker registry [docker-mirror.md](mirror)
+- Create a docker registry [mirror](docker-mirror.md)
 - Configure each node to use the mirror
 - Create the cluster
 - Configure a Loadbalancer
@@ -12,13 +12,13 @@ When creating a k8s cluster here are some tasks to consider (in order)
 
 ## Create a cluster
 
-- [minikube.md](minikube)
-- [https://rancher.com/docs/rancher/v2.x/en/installation/ha/](Rancher) using rke
+- [minikube](minikube.md)
+- [Rancher](https://rancher.com/docs/rancher/v2.x/en/installation/ha/) using rke
 
 
 ## Loadbalancer
 
-On prem k8s clusters tend not to have load balancers, here we can use [metallb.md](MetalLB)
+On prem k8s clusters tend not to have load balancers, here we can use [MetalLB](metallb.md)
 
 
 ## Persistant storage:
@@ -29,10 +29,10 @@ Minikube has some basic persistant storage but other on prem solutions do not.
 
 ## Service Mesh
 
-- [istio.md](ISTIO)
+- [ISTIO](istio.md)
 
 ## DataBases
 
-- [redis.md](Redis)
-- [vitess.md](Vitess)
+- [Redis](redis.md)
+- [Vitess](vitess.md)
 

@@ -1,4 +1,4 @@
-# Metallb install
+# MetalLB install
 
 MetalLB is a loadbalancer for a k8s cluster. These deployment files will use the _metallb-system_ by default.
 
@@ -36,5 +36,5 @@ kubectl apply -f metallb_config.yaml
 
 ## References
 
-[https://metallb.universe.tf/](metallb) official site
+[MetalLB](https://metallb.universe.tf/) official site
 
