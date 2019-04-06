@@ -19,7 +19,15 @@ kubectl create namespace istio-system
 helm install istio.io/istio-init --name istio-init --namespace istio-system --set istio_cni.enabled=true
 helm install istio.io/istio-cni --name=istio-cni --namespace=istio-system
 helm install istio.io/istio --name istio --namespace istio-system \
-     --set istio_cni.enabled=true
+     --set istio_cni.enabled=true \
+     --set tracing.enabled=true \
+     --set tracing.ingress.enabled=true \
+     --set kiali.enabled=true \
+     --set kiali.ingress.hosts='' \
+     --set kiali.ingress.enabled=true \
+     --set grafana.enabled=true \
+     --set grafana.ingress.hosts=''
+     
 ```
 On GKE clusters you need to enable "Network policy" and change the istio bin path used for cni
 ```bash
