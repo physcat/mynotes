@@ -4,7 +4,7 @@
 
 ```bash
 curl -L https://git.io/getLatestIstio | sh -
-cd istio-1.1.1
+cd istio-1.1.2
 for i in install/kubernetes/helm/istio-init/files/crd*yaml; do kubectl apply -f $i; done
 kubectl apply -f install/kubernetes/istio-demo.yaml
 ```
@@ -13,7 +13,7 @@ kubectl apply -f install/kubernetes/istio-demo.yaml
 ## Using helm
 ### Install with cni plugin
 ```bash
-helm repo add istio.io https://storage.googleapis.com/istio-release/releases/1.1.1/charts/
+helm repo add istio.io https://storage.googleapis.com/istio-release/releases/1.1.2/charts/
 helm update
 kubectl create namespace istio-system
 helm install istio.io/istio-init --name istio-init --namespace istio-system --set istio_cni.enabled=true
@@ -28,7 +28,7 @@ helm install istio.io/istio-cni --name=istio-cni --namespace=istio-system --set 
 
 ### Install without cni plugin
 ```bash
-helm repo add istio.io https://storage.googleapis.com/istio-release/releases/1.1.1/charts/
+helm repo add istio.io https://storage.googleapis.com/istio-release/releases/1.1.2/charts/
 helm update
 kubectl create namespace istio-system
 helm install istio.io/istio-init --name istio-init --namespace istio-system
