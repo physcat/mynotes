@@ -5,7 +5,7 @@ MetalLB is a loadbalancer for a k8s cluster. These deployment files will use the
 ## Deploy metallb into a cluster
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/google/metallb/v0.7.3/manifests/metallb.yaml
+kubectl apply -f https://raw.githubusercontent.com/google/metallb/v0.8.1/manifests/metallb.yaml
 ```
 
 

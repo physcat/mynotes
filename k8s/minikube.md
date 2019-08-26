@@ -2,13 +2,13 @@
 
 ## Install minikube
 ```bash
-curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 ```
 
 Reference: [github](https://github.com/kubernetes/minikube)
 
-## Install minikube KVM2 driver 
+## Install minikube KVM2 driver
 Follow the official installation instructions on [github](https://github.com/kubernetes/minikube/blob/master/docs/drivers.md#kvm2-driver)
 
 
